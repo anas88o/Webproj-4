@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Font Awesome Libary -->
+    <link rel="stylesheet" href="/Template_four/css/all.min.css">
+    <!-- Normalize File -->
+    <link rel="stylesheet" href="/Template_four/css/normalize.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500&family=Open+Sans:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="/Template_four/css/master.css">
+    <!-- Framwork CSS File -->
+    <link rel="stylesheet" href="/Template_four/css/Framwork.css">
+</head>
+<body>
+    <div class="page d-fx">
+        <div class="sidebar p-10 p-relative">
+            <h3 class="txt-center p-relative">Glowg</h3>
+            <ul>
+                <li>
+                    <a class="active d-fx al-c br-5 c-b bg-w p-10" href="index.html">
+                        <i class="fa-solid fa-chart-line fa-fw"></i>
+                        <span class="display-n-media">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-fx al-c br-5 c-b bg-w p-10" href="settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span class="display-n-media">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-fx al-c c-b br-5 bg-w p-10" href="profile.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span class="display-n-media">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-fx al-c br-5 c-b bg-w p-10" href="projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span class="display-n-media">Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-fx al-c br-5 c-b bg-w p-10" href="courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span class="display-n-media">Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-fx al-c br-5 c-b bg-w p-10" href="friends.html">
+                        <i class="fa-solid fa-user-group fa-fw"></i>
+                        <span class="display-n-media">Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-fx al-c br-5 c-b bg-w p-10" href="plans.html">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span class="display-n-media">Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <!-- Start Header -->
+            <header class="d-fx al-c ju-b br-10 bg-w p-15">
+                <div class="overview gap-25 d-fx al-c fx-1 p-relative">
+                    <h3 class="p-10 display-n-media">OverView</h3>
+                    <input class="search br-15 p-15 p-15" type="search" placeholder="Search Anything">
+                </div>
+                <div class="account d-fx al-c">
+                    <a class="c-b" href="#">
+                        Anas Ashraf
+                        <i class="fa-solid fa-chevron-down c-b down fa-fw"></i>
+                    </a>
+                    <a class="c-b" href="#"><img src="/Template_four/imgs/undraw_male_avatar_g98d.svg" alt=""></a>
+                </div>
+            </header>
+            <!-- End Header -->
+
+            <!-- Start Dashboard -->
+            <h3 class="p-relative">Dashboard</h3>
+            <div class="container d-gr gtc-450 gtc-200-media gap-20">
+                <!-- Start Welcome -->
+                <div class="widget bg-w p-relative br-15">
+                    <div class="welcome txt-center-media ju-c-media bg-items d-fx ju-b p-15">
+                        <div class="heading">
+                            <h4>Welcome</h4>
+                            <span class="txt-c">Glowg</span>
+                        </div>
+                        <div class="image">
+                            <img class="display-n-media" src="/Template_four/imgs/undraw_shared_goals_re_jvqd.svg" alt="">
+                        </div>
+                    </div>
+                    <img class="avatar display-n-media" src="/Template_four/imgs/undraw_male_avatar_g98d.svg" alt="avatar">
+                    <div class="info d-fx al-c ju-e di-c-media al-c-media p-20">
+                        <div class="name">
+                            <span>Anas Ashraf</span>
+                            <span>Developer</span>
+                        </div>
+                        <div class="project">
+                            <span>80</span>     
+                            <span>projects</span>
+                        </div>
+                        <div class="gained">
+                            <span>&dollar; 8500</span>     
+                            <span>Earend</span>
+                        </div>
+                    </div>
+                    <a class="link display-block primary-green c-w br-10 btn-padding" href="#profile.html">profile</a>
+                </div>
+                <!-- End Welcome -->
+
+                <!-- Start Draft -->
+                <div class="draft bg-w br-15 p-15">
+                    <h4>Quick Draft</h4>
+                    <p>Write A Draft For Your Ideas</p>
+                    <form class="d-fx di-c gap-25" action="">
+                        <input class="br-10 bg-items p-15" type="text" placeholder="Title">
+                        <textarea class="br-10 bg-items p-15" placeholder="Your Thoughts "></textarea>
+                    </form>
+                    <a class="btn-padding link display-block primary-green c-w br-10" href="#">Save</a>
+                </div>
+                <!-- End Draft -->
+
+                <!-- Start Targets -->
+                <div class="target bg-w br-15 p-15">
+                    <h4>Yearly Goals</h4>
+                    <p>Targets Of The Year</p>
+                    <div class="target-row bg-w d-fx ju-c al-c">
+                        <div class="icon c-w d-fx ju-c al-c nyanza">
+                            <i class="fa-solid fa-dollar-sign fa-fw"></i>
+                        </div>
+                        <div class="info fx-1">
+                            <p>Money</p>
+                            <span>&dollar;20.000</span>
+                            <div class="progress p-relative">
+                                <span class="nyanza br-10 p-absolute" style="width: 92%">
+                                    <span class="nyanza br-5 p-5 p-absolute">92%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="target-row bg-w d-fx ju-c al-c">
+                        <div class="icon c-w d-fx ju-c al-c celadon">
+                            <i class="fa-solid fa-dollar-sign fa-fw"></i>
+                        </div>
+                        <div class="info fx-1">
+                            <p>Money</p>
+                            <span>&dollar;20.000</span>
+                            <div class="progress p-relative">
+                                <span class="celadon br-10 p-absolute" style="width: 76%">
+                                    <span class="celadon br-5 p-5 p-absolute">76%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="target-row bg-w d-fx ju-c al-c">
+                        <div class="icon c-w d-fx ju-c al-c mint">
+                            <i class="fa-solid fa-dollar-sign fa-fw"></i>
+                        </div>
+                        <div class="info fx-1">
+                            <p>Money</p>
+                            <span>&dollar;20.000</span>
+                            <div class="progress p-relative">
+                                <span class="mint br-10 p-absolute" style="width: 55%">
+                                    <span class="mint br-5 p-5 p-absolute">55%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Targets -->
+
+                <!-- Start Tickets -->
+                <div class="tickets bg-w br-15 p-15">
+                    <h4>Tickets Statistics</h4>
+                    <p>Every Thing About Support Tickets</p>
+                     <div class="tickets-content d-gr gtc-200 gap-20">
+                        <div class="box p-15 d-fx al-c di-c br-15">
+                            <i class="fa-solid fa-list icon fa-fw"></i>
+                            <span>2500</span>
+                            <span>Total</span>
+                        </div>
+                        <div class="box p-15 d-fx al-c di-c br-15">
+                            <i class="fa-solid fa-spinner icon fa-fw"></i>
+                            <span>500</span>
+                            <span>Pending</span>
+                        </div>
+                        <div class="box p-15 d-fx al-c di-c">
+                            <i class="fa-solid fa-lock icon fa-fw"></i>
+                            <span>1900</span>
+                            <span>Closed</span>
+                        </div>
+                        <div class="box p-15 d-fx al-c di-c br-15">
+                            <i class="fa-regular fa-trash-can icon fa-fw"></i>
+                            <span>100</span>
+                            <span>Deleted</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Tickets -->
+
+                <!-- Start News -->
+                <div class="news bg-w br-15 p-15">
+                     <h4>Latest news</h4>
+                     <div class="box d-fx al-c gap-20">
+                        <img src="/Template_four/imgs/undraw_segment_re_a3e7.svg" alt="">
+                        <div class="info fx-1 p-10">
+                            <h3>Created SASS Section</h3>
+                            <p>New SASS Examples & Tutorials</p>
+                        </div>
+                        <span class="days p-10 bg-items br-5">3 Days Ago</span>
+                     </div>
+                     <div class="box d-fx al-c gap-20">
+                        <img src="/Template_four/imgs/undraw_complete_design_re_h75h.svg" alt="">
+                        <div class="info fx-1 p-10">
+                            <h3>Changed The Design</h3>
+                            <p>A Brand New Website Design</p>
+                        </div>
+                        <span class="days p-10 bg-items br-5">4 Days Ago</span>
+                     </div>
+                     <div class="box d-fx al-c gap-20">
+                        <img src="/Template_four/imgs/undraw_shared_goals_re_jvqd.svg" alt="">
+                        <div class="info fx-1 p-10">
+                            <h3>Team Increased</h3>
+                            <p>3 Developers Joined The Team</p>
+                        </div>
+                        <span class="days p-10 bg-items br-5">6 Days Ago</span>
+                     </div>
+                     <div class="box d-fx al-c gap-20">
+                        <img src="/Template_four/imgs/undraw_online_payments_re_y8f2.svg" alt="">
+                        <div class="info fx-1 p-10">
+                            <h3>Added Payment Gateway</h3>
+                            <p>Many New Payment Gateways Added</p>
+                        </div>
+                        <span class="days p-10 bg-items br-5">9 Days Ago</span>
+                     </div>
+                </div>
+                <!-- End News -->
+
+                <!-- Start Tasks -->
+                <div class="tasks bg-w br-15 p-15">
+                    <h4>Latest Tasks</h4>
+                    <div class="tasks-row p-relative">
+                        <span>Record One New Video</span>
+                        <p>Record Python Create Exe Project</p>
+                        <a href="#">
+                            <i class="fa-regular fa-trash-can delete p-absolute c-b fa-fw"></i>
+                        </a>
+                    </div>
+                    <div class="tasks-row p-relative">
+                        <span>Write Article</span>
+                        <p>Write Low Level vs High Level Languages</p>
+                        <a href="#">
+                            <i class="fa-regular fa-trash-can delete p-absolute c-b fa-fw"></i>
+                        </a>
+                    </div>
+                    <div class="tasks-row p-relative">
+                        <span>Finsh Project</span>
+                        <p>Publish Academy Programming Project</p>
+                        <a href="#">
+                            <i class="fa-regular fa-trash-can delete p-absolute c-b fa-fw"></i>
+                        </a>
+                    </div>
+                    <div class="tasks-row p-relative done">
+                        <span>Attend the meeting</span>
+                        <p>Attend The Project Business Analysis Meeting</p>
+                        <a href="#">
+                            <i class="fa-regular fa-trash-can delete p-absolute c-b fa-fw"></i>
+                        </a>
+                    </div>
+                    <div class="tasks-row p-relative">
+                        <span>Finish Lesson</span>
+                        <p>Finish Teaching Flex Box</p>
+                        <a href="#">
+                            <i class="fa-regular fa-trash-can delete p-absolute c-b fa-fw"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- End Tasks -->
+
+                <!-- Start Top-Search -->
+                <div class="top-search bg-w br-15 p-15">
+                    <h4>Top Search Items</h4>
+                    <div class="item-head d-fx ju-b">
+                        <p>Keyword</p>
+                        <p>Search Count</p>
+                    </div>
+                    <div class="items d-fx ju-b">
+                        <span>Programming</span>
+                        <span class="br-5 bg-items">220</span>
+                    </div>
+                    <div class="items d-fx ju-b">
+                        <span>java</span>
+                        <span class="br-5 bg-items">125</span>
+                    </div>
+                    <div class="items d-fx ju-b">
+                        <span>php</span>
+                        <span class="br-5 bg-items">26</span>
+                    </div>
+                    <div class="items d-fx ju-b">
+                        <span>javascript</span>
+                        <span class="br-5 bg-items">190</span>
+                    </div>
+                    <div class="items d-fx ju-b">
+                        <span>code</span>
+                        <span class="br-5 bg-items">243</span>
+                    </div>
+                    <div class="items d-fx ju-b">
+                        <span>logic</span>
+                        <span class="br-5 bg-items">164</span>
+                    </div>
+                </div>
+                <!-- End Top-Search -->
+
+                <!-- Start Uploads -->
+                <div class="uploads bg-w br-15 p-15">
+                    <h4>Latest Uploads</h4>
+                    <div class="uploads-row  d-fx ju-b al-c">
+                        <img src="/Template_four/imgs/pdf.svg" alt="">
+                        <div class="info fx-1">
+                            <span>my-file.pdf</span>
+                            <p>Admin</p>
+                        </div>
+                        <span class="br-5 bg-items p-5">3.9MB</span>
+                    </div>
+                    <div class="uploads-row  d-fx ju-b al-c">
+                        <img src="/Template_four/imgs/dll.svg" alt="">
+                        <div class="info fx-1">
+                            <span>My-Video-File.avi</span>
+                            <p>Osama</p>
+                        </div>
+                        <span class="br-5 bg-items p-5">9.5MB</span>
+                    </div>
+                    <div class="uploads-row  d-fx ju-b al-c">
+                        <img src="/Template_four/imgs/eps.svg" alt="">
+                        <div class="info fx-1">
+                            <span>My-Psd-File.pdf</span>
+                            <p>Designer</p>
+                        </div>
+                        <span class="br-5 bg-items p-5">6.2MB</span>
+                    </div>
+                    <div class="uploads-row  d-fx ju-b al-c">
+                        <img src="/Template_four/imgs/txt.svg" alt="">
+                        <div class="info fx-1">
+                            <span>my-file.pdf</span>
+                            <p>Admin</p>
+                        </div>
+                        <span class="br-5 bg-items p-5">1.5MB</span>
+                    </div>
+                    <div class="uploads-row  d-fx ju-b al-c">
+                        <img src="/Template_four/imgs/dll.svg" alt="">
+                        <div class="info fx-1">
+                            <span>My-DLL-File.pdf</span>
+                            <p>User</p>
+                        </div>
+                        <span class="br-5 bg-items p-5">23.5MB</span>
+                    </div>
+                    <div class="uploads-row  d-fx ju-b al-c">
+                        <img src="/Template_four/imgs/zip.svg" alt="">
+                        <div class="info fx-1">
+                            <span>My-Zip-File.pdf</span>
+                            <p>Admin</p>
+                        </div>
+                        <span class="br-5 bg-items p-5">5.5MB</span>
+                    </div>
+                </div>
+                <!-- End Uploads -->
+
+                <!-- Start last Project -->
+                <div class="last-project bg-w br-15 p-15">
+                    <h4>Last Project Progress</h4>
+                    <ul class="p-relative">
+                        <li class=" d-fx al-c done">Get The Project</li>
+                        <li class="d-fx al-c done">Started The Project</li>
+                        <li class="d-fx al-c done">The Proejct Is About To Finish</li>
+                        <li class="d-fx al-c current">Test The Project</li>
+                        <li class="d-fx al-c">Finish The Project & Get Money</li>
+                    </ul>
+                </div>
+                <!-- End last Project -->
+
+                <!-- Start Post -->
+                <div class="post bg-w br-15 p-15">
+                    <h4>Latest Post</h4>
+                    <div class="profile d-fx al-c gap-10">
+                        <img src="/Template_four/imgs/undraw_male_avatar_g98d.svg" alt="">
+                        <div class="info">
+                            <span>Anas Awadi</span>
+                            <p>About 3 Hours Ago</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p class="p">You Can Fool All Of The People Some Of The Time, 
+                        And Some Of The People All Of The Time, But You Can't Fool All Of The People All Of The Time.</p>
+                    </div>
+                    <div class="post-stats d-fx ju-b">
+                        <div class="box likes">
+                          <i class="fa-regular icon fa-fw fa-heart"></i>
+                          <span>1.8K</span>
+                        </div>
+                        <div class="box comments">
+                          <i class="fa-regular icon fa-fw fa-comments"></i>
+                          <span>500</span>
+                        </div>
+                      </div>
+                </div>
+                <!-- End Post -->
+
+                <!-- Start Social -->
+                <div class="social bg-w br-15 p-15">
+                    <h4>Social Media</h4>
+                    <div class="social-row txt-center c-w d-fx al-c twitter br-5">
+                        <div class="icon p-15">
+                            <i class="fa-brands twitter fa-x-twitter fa-fw"></i>
+                        </div>
+                        <div class="box fx-1 p-10 d-fx ju-b al-c">
+                            <span>30K Followers</span>
+                            <a class="br-15 c-b bg-w btn-padding br-15" href="#">Follow</a>
+                        </div>
+                    </div>
+                    <div class="social-row txt-center c-w d-fx al-c youtube br-5">
+                        <div class="icon p-15">
+                            <i class="fa-brands fa-youtube fa-fw"></i>                        </div>
+                        <div class="box fx-1 p-10 d-fx ju-b al-c">
+                            <span>10K Followers</span>
+                            <a class="br-15 c-b bg-w btn-padding br-15" href="#">Subscribe</a>
+                        </div>
+                    </div>
+                    <div class="social-row txt-center c-w d-fx al-c instagram br-5">
+                        <div class="icon p-15">
+                            <i class="fa-brands fa-instagram fa-fw"></i>                        </div>
+                        <div class="box fx-1 p-10 d-fx ju-b al-c">
+                            <span>19K Followers</span>
+                            <a class="br-15 c-b bg-w btn-padding br-15" href="#">Follow</a>
+                        </div>
+                    </div>
+                    <div class="social-row txt-center c-w d-fx al-c linkedin br-5">
+                        <div class="icon p-15">
+                            <i class="fa-brands fa-linkedin fa-fw"></i>                        </div>
+                        <div class="box fx-1 p-10 d-fx ju-b al-c">
+                            <span>12K Followers</span>
+                            <a class="br-15 c-b bg-w btn-padding br-10" href="#">Follow</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Social -->
+            </div>
+
+            <!-- Start Table -->
+            <div class="projects br-15 bg-w p-15">
+                <h4>Projects</h4>
+            <div class="responsive-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="bg-items">Name</th>
+                            <th class="bg-items">Finish Date</th>
+                            <th class="bg-items">Client</th>
+                            <th class="bg-items">Price</th>
+                            <th class="bg-items">Team</th>
+                            <th class="bg-items">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Elzero Shop</td>
+                            <td>10 Aug 2023</td>
+                            <td>Elzero Company</td>
+                            <td>&dollar;900</td>
+                            <td class="image">
+                                <img class="br-50p" src="/Template_four/imgs/team-01.png" alt="">
+                                <img class="br-50p" src="/Template_four/imgs/team-03.png" alt="">
+                                <img class="br-50p" src="/Template_four/imgs/team-02.png" alt="">
+                            </td>
+                            <td>
+                                <span class="lable c-w br-5 pending">Pending</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ministry Wikipedia</td>
+                            <td>02 Jul 2023</td>
+                            <td>Ministry</td>
+                            <td>&dollar;2500</td>
+                            <td class="image">
+                                <img class="br-50p" src="/Template_four/imgs/team-02.png" alt="">
+                                <img class="br-50p" src="/Template_four/imgs/team-04.png" alt="">
+                                <img class="br-50p" src="/Template_four/imgs/team-02.png" alt="">
+                                <img class="br-50p" src="/Template_four/imgs/team-03.png" alt="">
+                            </td>
+                            <td>
+                                <span class="lable c-w br-5 progress">In Progress</span>
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td>Mahmoud Website</td>
+                            <td>18 Jun 2023</td>
+                            <td>Mahmoud</td>
+                            <td>&dollar;300</td>
+                            <td class="image">
+                                <img class="br-50p" src="/Template_four/imgs/team-03.png" alt="">
+                                <img class="br-50p" src="/Template_four/imgs/team-01.png" alt="">
+                            </td>
+                            <td>
+                                <span class="lable c-w br-5 completed">Completed</span>
+                            </td>                     
+                        </tr>
+                        <tr>
+                            <td>Bouba App </td>
+                            <td>09 jun 2023</td>
+                            <td>Bouba</td>
+                            <td>&dollar;590</td>
+                            <td class="image">
+                                <img class="br-50p" src="/Template_four/imgs/team-04.png" alt="">
+                                <img class="br-50p" src="/Template_four/imgs/team-02.png" alt="">
+                                <img class="br-50p" src="/Template_four/imgs/team-01.png" alt="">
+                            </td>
+                            <td>
+                                <span class="lable c-w br-5 progress">In Progress</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Arena Application</td>
+                            <td>01 Mar 2023</td>
+                            <td>Arena Company</td>
+                            <td>&dollar;1500</td>
+                            <td class="image">
+                                <img class="br-50p" src="/Template_four/imgs/team-05.png" alt="">
+                                <img class="br-50p" src="/Template_four/imgs/team-03.png" alt="">
+                                <img class="br-50p" src="/Template_four/imgs/team-02.png" alt="">
+                                <img class="br-50p" src="/Template_four/imgs/team-04.png" alt="">
+                            </td>
+                            <td>
+                                <span class="lable c-w br-5 completed ">Completed</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sayed Website</td>
+                            <td>23 Jan 2023	</td>
+                            <td>Sayed</td>
+                            <td>&dollar;500</td>
+                            <td>
+                                <img class="br-50p" src="/Template_four/imgs/team-03.png" alt="">
+                                <img class="br-50p" src="/Template_four/imgs/team-05.png" alt="">
+                                <img class="br-50p" src="/Template_four/imgs/team-02.png" alt="">
+                            </td>
+                            <td>
+                                <span class="lable c-w br-5 pending">Pending</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+         </div>
+            <!-- End Table -->
+
+            <!-- End Dashboard -->
+        </div>
+    </div>
+</body>
+</html>
