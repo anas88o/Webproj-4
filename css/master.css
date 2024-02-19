@@ -73,9 +73,6 @@ h4 {
 }
 .toggle-switch {
     background-color: #ccc;
-    width: 76px;
-    height: 32px;
-    position: relative;
     transition: var(--main-Transition);
     cursor: pointer;
 }
@@ -109,7 +106,6 @@ h4 {
     min-height: 100vh;
 }
 .sidebar {
-    width: 200px;
     box-shadow: 0 -7px 10px #ddd; 
 }
 .sidebar > h3 {
@@ -167,7 +163,6 @@ h4 {
 
 /* Start Content */
 .content {
-    width: 100%;
     background-color: #f1f5f9;
     overflow: hidden;
 }
@@ -179,7 +174,6 @@ header .overview > h3  {
     font-size: 20px;
 }
 header .overview input {
-    width: 200px;
     border: 1px solid black; 
     transition: width var(--main-Transition);
 }
@@ -208,7 +202,6 @@ header .account.down {
     margin-left: 5px;
 }
 header .account img {
-    width: 50px;
     margin-left: 10px;
 }
 /* End Header */
@@ -253,18 +246,15 @@ header .account img {
     overflow: hidden;
 }
 .widget .welcome img {
-    width: 200px;
     margin-bottom: -20px;
 }
 .widget > img {
     transform: translate(18%,-55%);
-    width: 75px;
 }
 .widget .info {
     border-bottom: 1px solid var(--border-color);
     border-top: 1px solid var(--border-color);
     margin: 50px 0;
-    text-align: center;
 }
 @media (max-width:767px) {
     .widget .info {
@@ -285,7 +275,6 @@ header .account img {
     color: var(--txt-color);
 }
 .widget .link {
-    width: fit-content;
     margin: 20px auto;
 }
 .widget .link:hover {
@@ -312,7 +301,6 @@ header .account img {
     box-shadow:0 0 0 4px #e1fff0;
 }
 .draft .link {
-    width: fit-content;
     margin: 20px auto;
 }
 .draft > a:hover {
@@ -326,25 +314,17 @@ header .account img {
     margin-top: 20px;
 }
 .target .target-row .icon {
-    width: 80px;
-    height: 80px;
     margin-right: 20px;
-}
-@media (max-width:400px) {
-    .target .target-row .icon {
-        display: none;
-    }
 }
 .target .target-row .info > span {
     margin-bottom: 6px;
 }
 .target .target-row .progress {
-    height: 8px;
+    height: 6px;
 }
 .target .target-row .progress > span {
     left: 0;
     top: 0;
-    height: 100%;
 }
 .target .target-row .progress > span span {
     bottom: 21px;
@@ -398,13 +378,8 @@ header .account img {
 @media (max-width:767px) {
     .news .box {
         display: block;
-        text-align: center;
         margin-top: 40px;
     }
-}
-.news .box img {
-    width: 100px;
-    height: 65px;
 }
 .news .box .info h3 {
     margin: 0;
@@ -452,7 +427,6 @@ header .account img {
     margin-bottom: 22px;
 }
 .uploads .uploads-row img {
-    width: 40px;
     margin-right: 10px;
 }
 @media (max-width:300px) {
@@ -496,9 +470,6 @@ header .account img {
 /* End last Project */
 
 /* Start Post */
-.post .profile > img {
-    width: 60px;
-}
 .post .profile {
     margin-top: 20px;
 }
@@ -511,15 +482,11 @@ header .account img {
 }
 .post .post-content p {
     text-transform: capitalize;
-    color: black;
     line-height: 1.6;
     border-bottom: 1px solid var(--border-color);
     border-top: 1px solid var(--border-color);
     margin: 20px 0px;
     min-height: 120px;
-}
-.post .post-stats {
-    color: var(--txt-color);
 }
 .post .post-stats .box.likes:hover{
     color:red;
@@ -559,6 +526,18 @@ header .account img {
 .social .social-row .icon i  {
     font-size: 18px;
 }
+.social .social-row.twitter {
+    background: black;
+  }
+  .social .social-row.youtube {
+    background: #FF0000;
+  }
+  .social .social-row.instagram {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+  }
+  .social .social-row.linkedin{
+    background: #0077B5;
+  }
 /* End Social */
 
 /* Start Projects */
@@ -592,16 +571,17 @@ header .account img {
     margin-bottom: 10px;
     font-size: 25px;
 }
-.projects img {
-    width: 32px;
-    height: 32px;
-}
 .projects img:not(:first-child) {
     margin-left: -20px;
 }
-.projects tbody .lable {
-    padding: 10px 5px;
-    width: fit-content;
+.projects tbody .lable.completed {
+    background-color: #51cf66;
+}
+.projects tbody .lable.pending {
+    background-color: #ffd43b;
+}
+.projects tbody .lable.progress {
+    background-color: #748ffc;
 }
 /* End Projects */
 /*! End Dashboard  */
@@ -623,7 +603,6 @@ header .account img {
 }
 .site textarea {
     height: 130px;
-    width: 100%;
     margin-top: 20px;
     border: 1px solid transparent;
 }
@@ -691,11 +670,6 @@ header .account img {
 }
 .media .media-row .icon {
     font-size: 17px;
-    height: 100%;
-}
-.media .media-row input {
-    border: 0;
-    width: 100%;
 }
 .media .media-row input:focus::placeholder {
     opacity: 1;
@@ -808,7 +782,6 @@ header .account img {
 }
 .backup-location .server {
     border: 1px solid var(--border-color);
-    width: 100%;
 }
 .backup-location .server label {
     margin-bottom: 10px;
@@ -834,9 +807,6 @@ header .account img {
         border-right: 1px solid var(--border-color);
     }
 }
-.profile-info .box img {
-    width: 80px;
-}
 .profile-info .box .name {
     margin-top: 10px;
     font-weight: bold;
@@ -847,19 +817,10 @@ header .account img {
 .profile-info .box .lvl {
     margin-bottom: 15px;
     width: calc(100% - 60%);
-    height: 5px;
-}
-.profile-info .box .lvl-reach {
-    height: 100%;
 }
 .profile-info .box .stars {
     color: #ffd700;
     margin-bottom: 6px;
-}
-@media (max-width:767px) {
-    .profile-info .info {
-        text-align: center;
-    }
 }
 .profile-info .info span {
     display: inline;
@@ -880,12 +841,6 @@ header .account img {
 .other-data {
     margin-top: 35px;
 }
-@media (max-width:767px) {
-    .other-data .activities-row,
-    .other-data .skills ul {
-        text-align: center;
-    }
-}
 .other-data .skills li:not(:last-child) {
     border-bottom: 1px solid var(--items-background);
 }
@@ -898,9 +853,6 @@ header .account img {
 .other-data .activities-row:not(:last-child) {
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 20px;
-}
-.other-data .activities-row img {
-    width: 65px;
 }
 /* End Skills & Activities  */
 /*! END PROFILE PAGE */
@@ -922,8 +874,6 @@ header .account img {
     margin-bottom: 15px;
 }
 .project-page .box .images img {
-    width: 30px;
-    height: 30px;
     border: 2px solid white;
 }
 .project-page .box .images img:hover {
@@ -950,10 +900,6 @@ header .account img {
     padding-bottom: 12px;
     margin: 20px 0;
 }
-.project-page .box .work-dit span {
-    padding: 10px 5px;
-    width: fit-content;
-}
 .project-page .box .work-dit span:not(:last-child) {
     margin-right: 15px;
 }
@@ -962,10 +908,6 @@ header .account img {
     height: 5px;
     background-color: var(--green-color);
 }
-.project-page .box .budget .goal {
-    width: 25%;
-    height: 5px;
-}
 /*! END PROJECTS PAGE */
 
 
@@ -973,14 +915,10 @@ header .account img {
 .courses {
     margin: 0 20px 20px 20px;
 }
-.courses .box .cover {
-    width: 100%;
-}
 .courses .box .avatar {
-    width: 60px;
     left: 10px;
-    border: 3px solid white;
     top: 10px;
+    border: 3px solid white;
 }
 .courses .box .info {
     border-bottom: 1px solid var(--border-color);
@@ -1017,7 +955,6 @@ header .account img {
     color: white;
 }
 .friends .image img {
-    width: 70px;
     border-radius: 50%;
 }
 .friends .box .emp-profile span {
@@ -1054,7 +991,6 @@ header .account img {
 }
 .plans .card .cost-value {
     font-size: 35px;
-    width: fit-content;
     margin: auto;
 }
 .plans .card .cost-value::before {
@@ -1079,9 +1015,6 @@ header .account img {
 }
 .plans .card .feature-item a {
     color: blue;
-}
-.plans .card .join a {
-    padding: 5px 15px;
 }
 .plans .card .join .free {
     background-color: #4dabf7;
