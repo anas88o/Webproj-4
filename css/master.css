@@ -143,7 +143,7 @@ h4 {
 }
 @media (max-width:767px) {
     .sidebar {
-        width: 58px;
+        width: 60px;
         padding: 5px;
     }
     .sidebar > h3::before,
@@ -155,16 +155,11 @@ h4 {
         font-size: 13px;
     }
 }
-.sidebar span {
-    font-size: 14px;
-    margin-left: 10px;
-}
 /* End Sidebar */
 
 /* Start Content */
 .content {
     background-color: #f1f5f9;
-    overflow: hidden;
 }
 /* End Content */
 
@@ -174,7 +169,6 @@ header .overview > h3  {
     font-size: 20px;
 }
 header .overview input {
-    border: 1px solid black; 
     transition: width var(--main-Transition);
 }
 header .overview input:focus {
@@ -188,7 +182,7 @@ header .overview input:focus {
         width: 161px;
     }
     header .overview input:focus {
-        width: 185px;
+        width: 180px;
     }
     header .account a:first-child {
         display: none;
@@ -197,12 +191,6 @@ header .overview input:focus {
 header .overview input:focus::placeholder {
     transition: var(--main-Transition);
     opacity: 0;
-}
-header .account.down {
-    margin-left: 5px;
-}
-header .account img {
-    margin-left: 10px;
 }
 /* End Header */
 
@@ -232,9 +220,6 @@ header .account img {
     width: 150px;
     background-color: white;
 }
-.container {
-    margin: 0px 20px 20px 20px;
-}
 @media (max-width:767px) {
     .container {
         margin-left: 10px;
@@ -243,7 +228,6 @@ header .account img {
 }
 .widget .welcome {
     border-radius: 15px 15px 0px 0px;
-    overflow: hidden;
 }
 .widget .welcome img {
     margin-bottom: -20px;
@@ -256,14 +240,6 @@ header .account img {
     border-top: 1px solid var(--border-color);
     margin: 50px 0;
 }
-@media (max-width:767px) {
-    .widget .info {
-        margin: 25px;
-    }
-    .widget .info div {
-        margin: 15px;
-    }
-}
 .widget .info div span:first-child {
     display: block;
     margin: 0;
@@ -274,24 +250,13 @@ header .account img {
 .widget .info div span:last-child {
     color: var(--txt-color);
 }
-.widget .link {
-    margin: 20px auto;
-}
 .widget .link:hover {
     background-color: var(--alt-green-color);
 }
 
 /* Start Draft */
-.draft form {
-    margin-top: 20px;
-}
 .draft form textarea {
     height: 150px;
-    margin-bottom: 20px;
-}
-.draft form input,
-.draft form textarea {
-    border: 2px solid transparent;
 }
 .draft form input:hover,
 .draft form textarea:hover {
@@ -300,22 +265,12 @@ header .account img {
     background-color: #F1F1F1;
     box-shadow:0 0 0 4px #e1fff0;
 }
-.draft .link {
-    margin: 20px auto;
-}
 .draft > a:hover {
     background-color: var(--alt-green-color);
 }
 /* End Draft */
 
 /* Start Targets */
-.target .target-row {
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-.target .target-row .icon {
-    margin-right: 20px;
-}
 .target .target-row .info > span {
     margin-bottom: 6px;
 }
@@ -333,8 +288,7 @@ header .account img {
 .target .target-row .progress > span span::before {
     content: "";
     position: absolute;
-    border-width: 10px;
-    border-style: solid;
+    border: 10px solid;
     top: 21px;
     left: 7px;
 }
@@ -355,10 +309,6 @@ header .account img {
 .tickets .box {
     border: 1px solid var(--border-color);
 }
-.tickets .box .icon {
-    font-size: 27px;
-    margin-bottom: 17px;
-}
 .tickets .box > span {
     font-size: 27px;
     font-weight: bold;
@@ -372,19 +322,11 @@ header .account img {
 /* End Tickets */
 
 /* Start News */
-.news .box {
-    margin-bottom: 25px;
-}
 @media (max-width:767px) {
     .news .box {
         display: block;
         margin-top: 40px;
     }
-}
-.news .box .info h3 {
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 16px;
 }
 /* End News */
 
@@ -396,12 +338,6 @@ header .account img {
 .tasks .tasks-row.done {
     text-decoration: line-through;
     opacity: 0.2;
-}
-.tasks .tasks-row span {
-    margin: 0;
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 15px;
 }
 .tasks .tasks-row .delete {
     right: 0;
@@ -423,12 +359,6 @@ header .account img {
 /* End Top-search */
 
 /* Start Uploads */
-.uploads .uploads-row {
-    margin-bottom: 22px;
-}
-.uploads .uploads-row img {
-    margin-right: 10px;
-}
 @media (max-width:300px) {
     .uploads .uploads-row img {
         display: none;
@@ -444,9 +374,6 @@ header .account img {
     width: 2px;
     height: 100%;
     background-color: var(--green-color);   
-}
-.last-project li {
-    margin-top: 25px;
 }
 .last-project li::before {
     content: "";
@@ -470,15 +397,8 @@ header .account img {
 /* End last Project */
 
 /* Start Post */
-.post .profile {
-    margin-top: 20px;
-}
 .post .profile .info span {
-    font-weight: bold;
-    margin-bottom: 7px;
-}
-.post .profile .info p {
-    margin: 0;
+    margin-bottom: 5px;
 }
 .post .post-content p {
     text-transform: capitalize;
@@ -488,7 +408,7 @@ header .account img {
     margin: 20px 0px;
     min-height: 120px;
 }
-.post .post-stats .box.likes:hover{
+.post .post-stats .box.likes:hover {
     color:red;
     transform: scale(1.2);
     cursor: pointer;
@@ -504,9 +424,6 @@ header .account img {
 /* End Post */
 
 /* Start Social */
-.social .social-row {
-    margin-bottom: 15px;
-}
 @media (max-width:320px) {
     .social .social-row {
         flex-direction: column;
@@ -516,37 +433,26 @@ header .account img {
     }
 }
 .social .social-row .icon {
-    margin-right: 10px;
-    overflow: hidden;
     transition: var(--main-Transition);
 }
 .social .social-row .icon:hover {
     transform: rotate(20deg);
 }
-.social .social-row .icon i  {
-    font-size: 18px;
-}
 .social .social-row.twitter {
     background: black;
-  }
-  .social .social-row.youtube {
+}
+.social .social-row.youtube {
     background: #FF0000;
-  }
-  .social .social-row.instagram {
+}
+.social .social-row.instagram {
     background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
-  }
-  .social .social-row.linkedin{
+}
+.social .social-row.linkedin{
     background: #0077B5;
-  }
+}
 /* End Social */
 
 /* Start Projects */
-.projects {
-    margin: 0px 20px 20px 20px;
-}
-.projects .responsive-table {
-    overflow-x: auto;
-}
 .projects table {
     min-width: 1000px;
     border-spacing: 0;
@@ -566,11 +472,6 @@ header .account img {
 .projects tbody td:last-child {
     border-right: 1px solid var(--border-color);
 }
-.projects > h4 {
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 25px;
-}
 .projects img:not(:first-child) {
     margin-left: -20px;
 }
@@ -588,9 +489,6 @@ header .account img {
 
 
 /*! Start Settings page */
-.settings-page {
-    margin: 0px 20px 20px 20px;
-}
 @media (max-width: 767px) {
     .settings-page {
         margin: 0px 10px 10px 10px;
@@ -603,16 +501,11 @@ header .account img {
 }
 .site textarea {
     height: 130px;
-    margin-top: 20px;
     border: 1px solid transparent;
 }
 /* End site-control */
 
 /* Start General-info */
-.general form {
-    display:inline-flex;
-    margin: 13px;
-}
 @media (max-width:400px) {
     .general form {
         flex-direction: column;
@@ -624,7 +517,6 @@ header .account img {
 }
 .general form input {
     border: 1px solid #ccc;
-    margin-right: 10px;
 }
 .general form label {
     top: 5px;
@@ -648,15 +540,9 @@ header .account img {
 /* End General-info */
 
 /* Start security */
-.security .security-row {
-    margin-top: 25px;
-}
 .security .info span:first-child {
     font-size: 15px;
     margin-bottom: 7px;
-}
-.security .info p {
-    margin: 0;
 }
 .security .security-row .change:hover {
     background-color: var(--alt-green-color);
@@ -666,10 +552,6 @@ header .account img {
 /* Start Media */
 .media .media-row {
     border: 1.4px solid var(--border-color) ;
-    margin-bottom: 15px;
-}
-.media .media-row .icon {
-    font-size: 17px;
 }
 .media .media-row input:focus::placeholder {
     opacity: 1;
@@ -682,7 +564,6 @@ header .account img {
     appearance: none;
 }
 .wid-control .control-row label {
-    padding-left: 30px;
     cursor: pointer;
 }
 .wid-control .control-row label::before {
@@ -728,7 +609,6 @@ header .account img {
     appearance: none;
 }
 .backup .backup-row label {
-    padding-left: 30px;
     cursor: pointer;
 }
 .backup .backup-row label::before {
@@ -764,11 +644,6 @@ header .account img {
     transform: scale(1);
 }
 .backup-location {
-    align-items: center;
-    gap: 12px;
-    text-align: center;
-    padding-top: 20px;
-    margin-top: 25px;
     border-top: 1px solid var(--border-color);
 }
 .backup-location input {
@@ -784,22 +659,13 @@ header .account img {
     border: 1px solid var(--border-color);
 }
 .backup-location .server label {
-    margin-bottom: 10px;
-    display: block;
     cursor: pointer;
-}
-.backup-location .server label i {
-    display: block;
-    margin-bottom: 10px;
 }
 /* End Backup */
 /*! END SETTINGS PAGE */
 
 
 /*! START PROFILE PAGE */
-.profile-page {
-    margin: 0px 20px 20px 20px;
-}
 /* Start profile-info */
 @media (min-width:767px) {
     .profile-info .box {
@@ -808,14 +674,12 @@ header .account img {
     }
 }
 .profile-info .box .name {
-    margin-top: 10px;
     font-weight: bold;
 }
 .profile-info .box p {
     margin: 10px 0 25px; 
 }
 .profile-info .box .lvl {
-    margin-bottom: 15px;
     width: calc(100% - 60%);
 }
 .profile-info .box .stars {
@@ -838,15 +702,15 @@ header .account img {
 /* End profile-info */
 
 /* Start Skills & Activities  */
-.other-data {
-    margin-top: 35px;
-}
 .other-data .skills li:not(:last-child) {
     border-bottom: 1px solid var(--items-background);
 }
 .other-data .skills li span {
     display: inline-flex;
-    flex-wrap: wrap;        
+    flex-wrap: wrap;    
+    border-radius: 5px;
+    background-color: var(--items-background); 
+    padding: 10px;   
     margin-top: 7px;
     margin-right: 10px;
 }
@@ -859,15 +723,6 @@ header .account img {
 
 
 /*! START PROJECTS PAGE */
-.project-page {
-    margin: 0px 20px 20px 20px;
-}
-.project-page .box {
-    margin-bottom: 20px;
-}
-.project-page .box p {
-    margin: 10px 0;
-}
 .project-page .box > span:first-child {
     text-align: end;
     color: var(--txt-color);
@@ -896,9 +751,6 @@ header .account img {
 .project-page .box .work-dit {
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin: 20px 0;
 }
 .project-page .box .work-dit span:not(:last-child) {
     margin-right: 15px;
@@ -912,9 +764,6 @@ header .account img {
 
 
 /*! START COURSES PAGE */
-.courses {
-    margin: 0 20px 20px 20px;
-}
 .courses .box .avatar {
     left: 10px;
     top: 10px;
@@ -924,9 +773,7 @@ header .account img {
     border-bottom: 1px solid var(--border-color);
 }
 .courses .box .info .sub-heading {
-    font-size: 16px;
     font-weight: 900;
-    margin: 10px 0; 
 }
 .courses .box .info p {
     margin: 10px 0 35px 0;
@@ -936,26 +783,15 @@ header .account img {
     top: -15px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
     padding: 5px 10px;
 }
 /*! END COURSES PAGE */
 
 /*! START FRIENDS PAGE */
-.friends {
-    margin: 0 20px 20px 20px;
-}
-.friends .box .contact-info {
-    height: 45px;
-    margin: 15px;
-}
 .friends .box .contact-info .icon:hover {
     background-color: var(--green-color);
     transition: var(--main-Transition);
     color: white;
-}
-.friends .image img {
-    border-radius: 50%;
 }
 .friends .box .emp-profile span {
     margin-top: 15px;
@@ -972,9 +808,6 @@ header .account img {
 
 
 /*! START PLANS PAGE */
-.plans {
-    margin: 0 20px 20px 20px;
-}
 .plans .card .price {
     border: 5px solid white;
 }
@@ -991,7 +824,6 @@ header .account img {
 }
 .plans .card .cost-value {
     font-size: 35px;
-    margin: auto;
 }
 .plans .card .cost-value::before {
     content: "$";
@@ -999,13 +831,6 @@ header .account img {
     font-size: 20px;
     top: 4px;
     left:-21%;
-}
-.plans .card .feature-list {
-    margin: 25px 0 ;
-}
-.plans .card .feature-list .feature-item {
-    padding: 10px 0 ;
-    margin-bottom: 25px;
 }
 .plans .card .feature-item .check-icon {
     color: #69db7c;
